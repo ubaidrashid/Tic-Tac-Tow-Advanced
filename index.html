@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="home__section">
+        <!-- <div class="con"> -->
+        <div class="icon__box">
+          <img
+            src="assets/icon-x.svg"
+            alt="icon x"
+            class="main__icons main__x__icon"
+          />
+          <img
+            src="assets/icon-o.svg"
+            alt="icon o"
+            class="main__icons main__o__icon"
+          />
+        </div>
+        <div class="select__box">
+          <h1 class="primary__heading">Pick player 1's mark</h1>
+          <div class="select__icons">
+            <div class="icon__x__box active__icon__box">
+              <svg class="select__icon__x">
+                <use xlink:href="assets/icon-x-select.svg#icon-x"></use>
+              </svg>
+              <!-- <img src="assets/icon-x.svg" alt="icon x" class="select__icon__x" /> -->
+            </div>
+            <div class="icon__o__box">
+              <!-- <img src="assets/icon-o.svg" alt="icon o" class="select__icon__o" /> -->
+              <svg class="select__icon__o">
+                <use xlink:href="assets/icon-o-select.svg#icon-o"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="reminder">Remember: X goes first</div>
+        </div>
+        <div class="select__game__box">
+          <div class="select__cpu">New Game (vs CPU)</div>
+          <div class="select__player">New Game (vs player)</div>
+        </div>
+      </section>
+
+      <section class="game__section x-choice">
+        <header class="game__header">
+          <div class="icon__box">
+            <img
+              src="assets/icon-x.svg"
+              alt="icon x"
+              class="main__icons main__x__icon"
+            />
+            <img
+              src="assets/icon-o.svg"
+              alt="icon o"
+              class="main__icons main__o__icon"
+            />
+          </div>
+          <div class="display__turn__box">
+            <svg class="select__turn__x">
+              <use xlink:href="assets/icon-x-select.svg#icon-x"></use>
+            </svg>
+            <p class="turn__name">turn</p>
+          </div>
+          <div class="restart__box">
+            <svg class="select__restart">
+              <use xlink:href="assets/icon-restart.svg#icon-restart"></use>
+            </svg>
+          </div>
+        </header>
+
+        <div class="game__container">
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+          <div class="game__tiles"></div>
+        </div>
+        <div class="game__scores">
+          <div class="x__box">
+            <p class="x__name">x (you)</p>
+            <p class="x__scores">0</p>
+          </div>
+          <div class="ties__box">
+            <p class="ties__name">ties</p>
+            <p class="ties__score">0</p>
+          </div>
+          <div class="o__box">
+            <p class="o__name">o (cpu)</p>
+            <p class="o__scores">0</p>
+          </div>
+        </div>
+        <div class="think__box">
+          <p class="think__message">Your opponent is thinking</p>
+          <div class="custom-loader"></div>
+        </div>
+      </section>
+    </div>
+    <div class="modal__box">
+      <div class="modal__content">
+        <p class="win__lose__text">Oh no, you lost</p>
+        <div class="winner__text__box">
+          <img src="assets/icon-o.svg" alt="winner icon" class="winner__icon" />
+          <h2 class="winner__text winner__o">takes the round</h2>
+        </div>
+        <div class="continue__box">
+          <p class="quit__box">quit</p>
+          <p class="next__round">next round</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="restart__modal">
+      <div class="restart__container">
+        <h2 class="restart__game">Restart game?</h2>
+        <div class="restart__game__box">
+          <p class="no__restart">no, cancel</p>
+          <p class="yes__restart">yes, restart</p>
+        </div>
+      </div>
+    </div>
+    <div class="tied__modal">
+      <div class="tied__container">
+        <h2 class="tied__game">round tied</h2>
+        <div class="tied__game__box">
+          <p class="quit__box">quit</p>
+          <p class="next__round">next round</p>
+        </div>
+      </div>
+    </div>
+<div class="attribution">coded by <a href="https://github.com/ubaidrashid" target="_blank">Oss-Coding</a></div>
+    
+  </body>
+</html>
