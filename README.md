@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Olatoyan/tic-tac-toe]()
-- Live Site URL: [https://toyan-tictactoe.netlify.app/]()
+- Solution URL: [https://github.com/ubaidrashid/Tic-Tac-Tow-Advanced.git](https://github.com/ubaidrashid/Tic-Tac-Tow-Advanced.git)
+- Live Site URL: [https://x-vs-o-showdown.netlify.app/](https://x-vs-o-showdown.netlify.app/)
 
 ## My process
 
@@ -39,5 +39,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Toyan Tic Tac Toe]()
-- Frontend Mentor - [@olatoyan](https://www.frontendmentor.io/profile/olatoyan)
+- Website - [Oss tic Tac toe](https://x-vs-o-showdown.netlify.app/)
+- Frontend Mentor - [@ubaidrashid](https://www.frontendmentor.io/profile/ubaidrashid)
